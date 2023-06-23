@@ -23,38 +23,26 @@ As a new data engineer at Pewlett Hackard (a fictional company), the first major
 ### Entity Relationship Diagram (ERD) of the 6 tables (csv files) and SQL code files
 
 * QuickDBD-Free Diagram_EmployeeSQL.png - image file of the ERD 
-* EmployeeSQLschema.sql - sql file of the table(s) schemata  (exported 
-* EmployeeSQLtablecreation.sql - final script, removing intermediate output tables, that generated the final analysis output for the pandas-challenge assignment
-* EmployeeSQLtablecreation.sql - final script, removing intermediate output tables, that generated the final analysis output for the pandas-challenge assignment
+* EmployeeSQLschema.sql - sql file of the table(s) schemata that was run to create the tables for the 6 csv files in PostgreSQL v14/pgAdmin4  (exported from QuickDBD after creating ERD)
+* EmployeeSQLtablecreation.sql - another version of sql code to create tables for the 6 csv files in EmployeeSQL database
+* EmployeeSQLanalysis.sql - sql code to answer the data analysis questions 1-8
 
-## Analysis Steps
-In the PyCitySchools assignment we were tasked with using Pandas and Jupyter Notebook to create a report that included the following disctrict schools' standardized testing performance analyses:
-1. Disctrict level summary report, representing a high-level snapshot of the district's key metrics:
-	* Total number of unique schools
-	* Total students
-	* Total budget
-	* Average math score
-	* Average reading score
-	* % passing math (the percentage of students who passed math)
-	* % passing reading (the percentage of students who passed reading)
-	* % overall passing (the percentage of students who passed math AND reading)
+## Analysis Questions
 
-2. School level summary report, representing the following key metrics about each school:
-  * School name
-  * School type
-  * Total students
-  * Total school budget
-  * Per student budget
-  * Average math score
-  * Average reading score
-  * % passing math (the percentage of students who passed math)
-  * % passing reading (the percentage of students who passed reading)
-  * % overall passing (the percentage of students who passed math AND reading)
+1. List the employee number, last name, first name, sex, and salary of each employee.
 
-3. School level summary reports comparing the top 5 performing schools to the bottom 5 performing schools.  The performance ranking was based on the percentage of students who passed both the Math and Reading standardized tests (% Overall Passing).
+2. List the first name, last name, and hire date for the employees who were hired in 1986.
 
-4. School level summary reports comparing the schools' average Math test scores and average Reading test scores by grade levels.
+3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
 
-5. School level summary report comparing the schools' performances by 4 per-student budget spending categories.
+4. List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
 
-6. School level summary report comparing the schools' performances by 3 school size categories.
+5. List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+
+6. List each employee in the Sales department, including their employee number, last name, and first name.
+
+7. List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+
+8. List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+
+
